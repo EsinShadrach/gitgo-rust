@@ -6,7 +6,7 @@ use std::{
 fn main() {
     loop {
         let mut commit_message = String::new();
-        println!("Enter commit message: ");
+        print!("Enter commit message: ");
         std::io::stdout().flush().unwrap(); // Flush the buffer to ensure the prompt is displayed immediately.
         std::io::stdin()
             .read_line(&mut commit_message)
